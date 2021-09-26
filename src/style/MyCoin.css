@@ -1,0 +1,9 @@
+.MyCoin {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 32vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
