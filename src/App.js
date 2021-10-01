@@ -13,7 +13,7 @@ function App() {
 
   async function getCoinDatas() {
     const { data: datas } = await axios.get(API + "coins/list");
-    const extractedDatas = datas.slice(1000, 1030);
+    const extractedDatas = datas.slice(1000, 2100);
     setCoinDatas(extractedDatas);
     console.log(extractedDatas);
   }

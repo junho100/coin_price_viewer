@@ -7,7 +7,7 @@ function MyCoin(props) {
   const [coinData, setCoinData] = useState({});
 
   async function getPresentCoinData() {
-    const {
+    let {
       data: {
         image: { large },
         name,
@@ -18,6 +18,9 @@ function MyCoin(props) {
         },
       },
     } = await axios.get(props.API + "coins/" + props.presentCoin);
+    if (en.length > 500) {
+      en = en.substr(0, 500) + "...";
+    }
     setCoinData({
       src: large,
       name,
@@ -39,7 +42,7 @@ function MyCoin(props) {
     return <div className="MyCoin">empty!</div>;
   } else {
     if (isLoading) {
-      return <div className="MyCoin">loading....</div>;
+      return <div className="MyCoin loading">loading....</div>;
     } else {
       return (
         <div className="MyCoin">
@@ -50,8 +53,7 @@ function MyCoin(props) {
             <li>{coinData.name}</li>
             <li>{coinData.symbol}</li>
             <li>{coinData.description}</li>
-            <li>{coinData.market_data}</li>
-            <li>{coinData.name}</li>
+            <li>price : {coinData.market_data}btc</li>
           </ul>
         </div>
       );
