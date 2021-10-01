@@ -4,8 +4,28 @@
   left: 0;
   width: 35vw;
   height: 100vh;
+}
+.welcome_wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  margin-top: 20px;
+}
+#title {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 250px;
+}
+#header {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 10px;
+  justify-self: start;
 }
 .loading {
   display: flex;
@@ -35,7 +55,9 @@
 #coin_wrapper > :nth-child(4) {
   text-align: center;
 }
-#coin_wrapper > :nth-child(6) {
+#coin_wrapper > :nth-child(5) {
+  font-size: 20px;
+  font-weight: 800;
   margin-bottom: 0;
 }
 

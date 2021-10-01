@@ -39,13 +39,36 @@ function MyCoin(props) {
   }, [props.presentCoin]);
 
   if (props.presentCoin === "") {
-    return <div className="MyCoin">empty!</div>;
+    return (
+      <div className="MyCoin">
+        <div className="welcome_wrapper">
+          <h1 id="title">COIN PRICE VIEWER</h1>
+          <p>제작자 : 백준호</p>
+          <p>bemodesty306@naver.com</p>
+          <p>010-5736-6500</p>
+          <span>
+            GITHUB :{" "}
+            <a href="https://github.com/JunhoBaek" target="_blank">
+              https://github.com/JunhoBaek
+            </a>
+          </span>
+        </div>
+      </div>
+    );
   } else {
     if (isLoading) {
       return <div className="MyCoin loading">loading....</div>;
     } else {
       return (
         <div className="MyCoin">
+          <h1
+            id="header"
+            onClick={() => {
+              props.setPresentCoin("");
+            }}
+          >
+            CoinPriceViewer
+          </h1>
           <ul id="coin_wrapper">
             <li>
               <img src={coinData.src} alt="#"></img>
