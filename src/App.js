@@ -10,8 +10,6 @@ function App() {
   const [coinDatas, setCoinDatas] = useState([]);
   const [presentCoin, setPresentCoin] = useState("");
   /* 클릭한 코인 데이터 받아오는 함수 구현*/
-  const [presentCoinData, setPresentCoinData] = useState({});
-  const [coinIsLoading, setCoinIsLoading] = useState(true);
 
   async function getCoinDatas() {
     const { data: datas } = await axios.get(API + "coins/list");
@@ -26,11 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <MyCoin
-        presentCoin={presentCoin}
-        API={API}
-        isLoading={coinIsLoading}
-      ></MyCoin>
+      <MyCoin presentCoin={presentCoin} API={API}></MyCoin>
       <CoinList
         coinDatas={coinDatas}
         setPresentCoin={setPresentCoin}

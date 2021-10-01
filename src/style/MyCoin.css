@@ -12,3 +12,33 @@
   justify-content: center;
   align-items: center;
 }
+#coin_wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#coin_wrapper > li {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#coin_wrapper > :nth-child(2) {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+#coin_wrapper > :nth-child(3) {
+  color: gray;
+}
+#coin_wrapper > :nth-child(4) {
+  text-align: center;
+}
+#coin_wrapper > :nth-child(6) {
+  margin-bottom: 0;
+}
+
+#coin_wrapper img {
+  width: 20em;
+}

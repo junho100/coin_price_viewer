@@ -13,6 +13,7 @@ function CoinList(props) {
             name={coinData.name}
             symbol={coinData.symbol}
             setPresentCoin={props.setPresentCoin}
+            getPresentCoinData={props.getPresentCoinData}
           ></Coin>
         );
       })}
