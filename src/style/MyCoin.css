@@ -1,9 +1,14 @@
 .MyCoin {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 32vw;
+  left: 0;
+  width: 35vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

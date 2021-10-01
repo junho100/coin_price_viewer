@@ -1,6 +1,25 @@
 /*height : 180px*/
 .Coin {
   width: 100%;
-  height: 180px;
+  height: 60px;
   border-bottom: 1px solid black;
+}
+.Coin:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.Coin ul {
+  height: 100%;
+  list-style-type: none;
+  margin-left: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+._name {
+  font-size: 1.7em;
+}
+._symbol {
+  color: gray;
+  margin-left: 18px;
+  margin-top: 10px;
 }

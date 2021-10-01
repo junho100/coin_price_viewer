@@ -1,7 +1,8 @@
 .CoinList {
   margin: 0;
   padding: 0;
-  width: 66vw;
+  margin-left: 35vw;
+  width: 65vw;
   height: 500vh;
   background-color: #e7473c;
 }

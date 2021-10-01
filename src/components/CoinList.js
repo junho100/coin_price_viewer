@@ -12,6 +12,7 @@ function CoinList(props) {
             id={coinData.id}
             name={coinData.name}
             symbol={coinData.symbol}
+            setPresentCoin={props.setPresentCoin}
           ></Coin>
         );
       })}
@@ -19,4 +20,4 @@ function CoinList(props) {
   );
 }
 
-export default CoinList;
+export default React.memo(CoinList);
