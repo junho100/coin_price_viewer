@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../style/MyCoin.css";
-/* 코인 데이터 props로 넘어오면 랜더링 구현*/
 function MyCoin(props) {
   const [isLoading, setIsLoading] = useState(true);
   const [coinData, setCoinData] = useState({});
