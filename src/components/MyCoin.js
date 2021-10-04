@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../style/MyCoin.css";
+
+const API = "https://api.coingecko.com/api/v3/";
+
 function MyCoin(props) {
   const [isLoading, setIsLoading] = useState(true);
   const [coinData, setCoinData] = useState({});
@@ -16,7 +19,7 @@ function MyCoin(props) {
           current_price: { btc },
         },
       },
-    } = await axios.get(props.API + "coins/" + props.presentCoin);
+    } = await axios.get(API + "coins/" + props.presentCoin);
     if (en.length > 500) {
       en = en.substr(0, 500) + "...";
     }

@@ -3,6 +3,13 @@
 프론트엔드 개인 프로젝트 <가상화폐 정보 뷰어><br>
 API를 통해 전체 가상화폐에서(CoinGecko API 기준) 랜덤한 가상화폐 100개를 보여주고, 클릭 시 가상화폐 정보를 받아와 화면에 랜더링하는 어플리케이션
 
+## Preview
+
+![main](https://user-images.githubusercontent.com/55343124/135835797-20a7c610-8e2e-4f62-91b6-e51e139c3c4a.PNG)
+매인화면
+![content](https://user-images.githubusercontent.com/55343124/135836134-87f00e1f-2093-4f86-9fce-0992348215ac.PNG)
+콘텐츠 화면
+
 ## Tech Stack I Used
 
 - HTML
